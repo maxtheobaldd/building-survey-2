@@ -35,6 +35,15 @@ npm test          # engine, wording compliance, instruction parser, report
 npm run typecheck
 ```
 
+## Ship to testers (AltStore)
+
+Private code repo: `maxtheobaldd/building-survey-2`. iPhone/iPad builds go out through the public AltStore source `maxtheobaldd/home-mot-altstore`, the same way as NavSafe. See [docs/altstore.md](docs/altstore.md):
+
+```bash
+scripts/build-altstore.sh output/altstore-YYYY-MM-DD
+scripts/publish-altstore.sh output/altstore-YYYY-MM-DD notes.md
+```
+
 ## Where things live
 
 | Path | What |
