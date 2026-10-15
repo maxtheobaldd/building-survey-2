@@ -5,7 +5,8 @@ same way NavSafe does (`navsafe-app/docs/25-altstore-distribution.md`).
 
 - **Code repo (private):** <https://github.com/maxtheobaldd/building-survey-2>
 - **Public source repo:** <https://github.com/maxtheobaldd/home-mot-altstore>
-  (holds only `source.json`, the README install guide and the icon; no app
+  (holds only `source.json`, the README install guide, the icon and four
+  screenshots of the built-in sample inspection; no app
   code). It has to be public: AltStore fetches the source and the IPA without
   signing in to GitHub, so anyone with the link can install the app.
 - **Source URL testers add:**
