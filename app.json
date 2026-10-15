@@ -1,18 +1,23 @@
 {
   "expo": {
-    "name": "building-survey-2",
-    "slug": "building-survey-2",
+    "name": "Home MOT",
+    "slug": "home-mot",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
-    "scheme": "buildingsurvey2",
-    "userInterfaceStyle": "automatic",
+    "scheme": "homemot",
+    "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "uk.propertyhealthcheck.homemot",
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "uk.propertyhealthcheck.homemot",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0E2235",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -28,11 +33,22 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#0E2235",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 220
         }
-      ]
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Home MOT uses your photos to add survey and drone photographs to inspection reports.",
+          "cameraPermission": "Home MOT uses the camera to photograph rooms and building elements for inspection reports.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-sharing",
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
